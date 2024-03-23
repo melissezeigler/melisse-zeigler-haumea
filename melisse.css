@@ -1,0 +1,30 @@
+body {
+
+    background-image: url('AlaskaGlacier.jpg');
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+h1 {
+    text-align: left;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 40px black;
+}
+
+h2 {
+    text-align: left;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 40px black;
+}
+
+section {
+    text-align: left;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 30px black;
+}
