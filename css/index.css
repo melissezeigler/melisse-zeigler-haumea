@@ -1,0 +1,78 @@
+/* Commented the background color since I don't want any background color. I just want to stick with my glacier background */
+/* * {
+    background-color: white;
+} */
+
+body {
+    background-color:black;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: white;
+    list-style: none;
+    justify-content: flex-end;
+    font-size: 20px;
+    border-color: gray;
+    position: sticky;
+    padding: 30px 10%;
+}
+
+.container li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    border-color: white;
+    border-radius: 50px;
+}
+
+
+h1 {
+    text-align: left;
+    font-size: 65px;
+    color: white;
+    text-shadow: 2px 2px 40px black;
+    position: sticky;
+}
+
+h2 {
+    text-align: left;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 40px black;
+}
+
+section {
+    text-align: left;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 30px black;
+}
+
+.icons ul{
+    position: absolute;
+    display: flex;
+    /* Will get rid of the bullets */
+    list-style: none;
+    margin: 0 15px;
+    color: white;
+}
+
+.icons ul li{
+    position: relative;
+    display: block;
+    width: 60px;
+}
+
+a {
+    color: white;
+}
+
