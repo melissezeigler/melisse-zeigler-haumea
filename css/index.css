@@ -109,3 +109,44 @@ a {
         background-color: yellow;
     }
 }
+
+@media (any-hover: hover) {
+    a:hover {
+      background: yellow;
+    }
+    h1:hover {
+        background: yellow;
+    }
+    h2:hover {
+        background: yellow;
+    }
+    strong:hover {
+        background: yellow;
+    }
+    p:hover {
+        background: yellow;
+    }
+}
+
+@keyframes jiggle {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(25px);
+    }
+  }
+  
+  @media (update: fast) {
+    h1 {
+      animation: 1s jiggle linear alternate infinite;
+    }
+    p {
+        animation: 5s jiggle linear alternate infinite;
+    }
+    .icons ul {
+        animation: 1s jiggle linear alternate infinite;
+    }
+}
+  
