@@ -35,7 +35,7 @@ h1 {
     position: sticky;
 }
 
-h2 {
+section {
     text-align: left;
     align-items: center;
     font-size: 30px;
@@ -43,12 +43,10 @@ h2 {
     text-shadow: 2px 2px 30px black;
 }
 
-section {
-    text-align: left;
-    align-items: center;
-    font-size: 30px;
-    color: white;
-    text-shadow: 2px 2px 30px black;
+#skills {
+    list-style: none;
+    display: inline-block;
+    font-style: italic;
 }
 
 .icons ul{
@@ -71,7 +69,7 @@ a {
 
 
 @media (max-width: 1280px) {
-    h1 {
+    h1 h2 strong .nav-links .icons ul  {
         color: yellow;
         font-size: 32px;
         font-style: italic;
@@ -111,9 +109,6 @@ a {
 }
 
 @media (any-hover: hover) {
-    a:hover {
-      background: yellow;
-    }
     h1:hover {
         background: yellow;
     }
@@ -121,9 +116,6 @@ a {
         background: yellow;
     }
     strong:hover {
-        background: yellow;
-    }
-    p:hover {
         background: yellow;
     }
 }
@@ -145,8 +137,4 @@ a {
     p {
         animation: 5s jiggle linear alternate infinite;
     }
-    .icons ul {
-        animation: 1s jiggle linear alternate infinite;
-    }
 }
-  
