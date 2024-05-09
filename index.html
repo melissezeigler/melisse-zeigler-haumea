@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
     <!-- Stretch Goal: Load in a font family from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,6 +33,7 @@
         <p>I'm a <strong>Food Technologist</strong> and an aspiring <strong>Software Engineer</strong>.</p>
         <img src="img/profilephoto.jpg" alt="melisse photo" width="300" id="profile photo" class="profile-photo">
     </section>
+
     <section id="experience">
         <h2>Experience</h2>
             <ul>
@@ -40,6 +42,7 @@
                 <li>Food and Beverage Intern at St. Louis Union Station Hotel</li>
             </ul>
     </section>
+
     <section id="skills">
         <h2>Technical Skills</h2>
         <!-- <p>JavaScript</p>
@@ -51,6 +54,31 @@
         <h2>Projects</h2>
         <p>Will be added soon!</p>
     </section>
+
+    
+
+    <section id="messageForm">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label for="usersName">Name</label><br>
+            <input type="text" name="usersName" id="usersName" required="true"><br>
+            <label for="usersEmail">Email</label><br>
+            <input type="email" name="usersEmail" id="usersEmail" required="true"><br>
+            <label for="usersMessage">Message</label><br>
+            <textarea name="usersMessage" id="usersMessage" rows="10" cols="30" required="true"></textarea><br>
+            <button type="submit">Submit</button><br>
+        </form>
+    </section>
+
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
+
+    <section id="footer">
+
+    </section>
+
     <section id="connect">
         <h2>Connect</h2>
         <!-- Stretch Goal: Make or use social media icons to replace your link text with images -->
@@ -61,9 +89,6 @@
                 <li><a href="https://www.instagram.com/melissezeigler/"><i class="fa fa-instagram"></i></a></li>
             </ul>
         </div>        
-    </section>
-    <section id="footer">
-
     </section>
     <script src = "js/index.js"></script>
 </body>
