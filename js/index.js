@@ -52,3 +52,24 @@ messageForm.addEventListener("submit", (event) => {
     messageList.appendChild(newMessage);
     messageForm.reset();
 });
+
+// Lesson 15
+const projectsSection = document.querySelector("#projects");
+const projectsList = projectsSection.querySelector("ul");
+
+fetch("https://api.github.com/users/melissezeigler/repos").then((response) => {
+    if(!response.ok) {
+        throw new Error("API is not working!")
+    }
+    return response.json();
+}).then((data) => {
+    for (let i = 0; i < data.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = data[i].name;
+      projectsList.appendChild(project);  
+    }
+}).catch((error) => {
+    console.log(error);
+});
+
+
