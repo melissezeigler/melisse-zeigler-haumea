@@ -29,16 +29,20 @@ body {
 
 h1 {
     text-align: left;
-    font-size: 65px;
+    font-size: 45px;
     color: white;
     text-shadow: 2px 2px 40px black;
     position: sticky;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 section {
     text-align: left;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     text-shadow: 2px 2px 30px black;
 }
