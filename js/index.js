@@ -72,4 +72,12 @@ fetch("https://api.github.com/users/melissezeigler/repos").then((response) => {
     console.log(error);
 });
 
+// Nav converted to a hamburger menu on smaller devices via media queries
+function toggleMenu() {
+    console.log("Toggle menu clicked!");
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+
+
 
