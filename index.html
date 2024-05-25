@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js" defer></script>
-    <link rel="stylesheet" href="index.css">
-    <!-- Stretch Goal: Load in a font family from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,14 +13,16 @@
     <title>Melisse's Website</title>
 </head>
 <body>
-    <!-- nav elements -->
-    <nav class="navbar">
-        <ul class="container">
+     <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="container" id="nav-menu">
             <li class="nav-links"><a href="#about">About</a></li>
             <li class="nav-links"><a href="#experience">Experience</a></li>
             <li class="nav-links"><a href="#skills">Technical Skills</a></li>
             <li class="nav-links"><a href="#projects">Projects</a></li>
-            <li class="nav-links"><a href="#connect">Connects</a></li>
+            <li class="nav-links"><a href="#connect">Connect</a></li>
         </ul>
     </nav>
 
@@ -31,10 +31,6 @@
         <h2>About</h2>
         <p>I'm a <strong>Food Technologist</strong> and an aspiring <strong>Software Engineer</strong>.</p>
         <img src="img/profilephoto.jpg" alt="melisse photo" width="300" id="profile photo" class="profile-photo">
-    <h1>Melisse Zeigler</h1>
-    <section id="About">
-        <h2>About</h2>
-            <p>I'm a <strong>Food Technologist</strong> and an aspiring <strong>Software Engineer</strong>.</p>
     </section>
 
     <section id="experience">
@@ -48,18 +44,11 @@
 
     <section id="skills">
         <h2>Technical Skills</h2>
-        <!-- <p>JavaScript</p>
-        <p>Microsoft 365</p>
-        <p>SQL</p>
-        <p>SharePoint</p> -->
     </section>
     <section id="projects">
         <h2>Projects</h2>
-        <!-- <p>Will be added soon!</p> -->
         <ul></ul>
     </section>
-
-    
 
     <section id="messageForm">
         <h2>Leave a Message</h2>
@@ -79,17 +68,15 @@
         <ul></ul>
     </section>
 
-    <section id="footer">
-
-    </section>
+    <section id="footer"></section>
 
     <section id="connect">
         <h2>Connect</h2>
         <div class="icons">
             <ul>           
-                <li><a href="https://www.linkedin.com/in/melisse-zeigler-880b9728a/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href ="https://github.com/melissezeigler"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://www.instagram.com/melissezeigler/"><i class="fa fa-instagram"></i></a></li>
+                <li class="footer-links"><a href="https://www.linkedin.com/in/melisse-zeigler-880b9728a/"><i class="fa fa-linkedin"></i></a></li>
+                <li class="footer-links"><a href ="https://github.com/melissezeigler"><i class="fa fa-github"></i></a></li>
+                <li class="footer-links"><a href="https://www.instagram.com/melissezeigler/"><i class="fa fa-instagram"></i></a></li>
             </ul>
         </div>        
     </section>

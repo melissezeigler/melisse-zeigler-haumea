@@ -7,23 +7,38 @@ body {
 }
 
 .navbar {
+    background-color: black;
+    color: white;
     display: flex;
     align-items: center;
-    height: 50px;
-    color: white;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
     list-style: none;
-    justify-content: flex-end;
-    font-size: 20px;
-    position: sticky;
-    padding: 30px 10%;
+    padding: 0;
+    margin: 0;
 }
 
 .container li {
-    list-style: none;
-    display: inline-block;
-    padding: 0px 20px;
-    border-color: white;
-    border-radius: 50px;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: yellow;
 }
 
 
@@ -49,7 +64,6 @@ section {
 
 #skills {
     list-style: none;
-    /* display: inline-block; */
     font-style: italic;
 }
 
@@ -70,7 +84,6 @@ section {
 a {
     color: white;
 }
-
 
 @media (max-width: 1280px) {
     h1 h2 strong .nav-links .icons ul  {
@@ -99,16 +112,6 @@ a {
         margin-right: auto;
         padding-left: 0.5em;
         padding-right: 0.5em;
-        /* background-color: gray; */
-    }
-
-    .icons ul {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        background-color: yellow;
     }
 }
 
@@ -120,7 +123,7 @@ a {
         background: yellow;
     }
     strong:hover {
-        background: yellow;
+        background: rgba(255, 255, 255, 0.2);
     }
 }
 
@@ -142,3 +145,39 @@ a {
         animation: 5s jiggle linear alternate infinite;
     }
 }
+/* Hide container on smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 1;
+    }
+
+    .container.active {
+        display: flex;
+    }
+
+    .container li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Hide hamburger menu on bigger screens */
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+    }
+}
+
+
+
