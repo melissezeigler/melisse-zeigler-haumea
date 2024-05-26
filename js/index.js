@@ -8,16 +8,24 @@ copyright.innerHTML = `<small>Melisse Zeigler &copy; ${thisYear}</small>`;
 footer.appendChild(copyright);
 document.body.appendChild(footer);
 
-let skills = ["Office365", "Python", "HTML", "CSS", "JavaScript", "SQL", "Github", "Sharepoint"]
-let skillsSection = document.getElementById("skills");
-let skillsList = document.createElement("ul");
-skillsSection.appendChild(skillsList);
+// let skills = ["Office365", "Python", "HTML", "CSS", "JavaScript", "SQL", "Github", "Sharepoint"]
+// let skillsSection = document.getElementById("skillsContainer");
+// let skillsList = document.createElement("ul");
+// skillsSection.appendChild(skillsList);
 
-for (let skill of skills) {
-    const skillItem = document.createElement("li");
-    skillItem.innerText = skill;
-    skillsList.appendChild(skillItem);
-}
+// for (let skill of skills) {
+//     const skillItem = document.createElement("li");
+//     skillItem.innerText = skill;
+//     skillsList.appendChild(skillItem);
+// }
+const skills = ["Office365", "Python", "HTML", "CSS", "JavaScript", "SQL", "Github", "Sharepoint"];
+const skillsSection = document.querySelector(".skillsContainer");
+
+skills.forEach(skill => {
+    const skillItem = document.createElement("div");
+    skillItem.textContent = skill;
+    skillsSection.appendChild(skillItem);
+});
 
 // Lesson 14
 const messageForm = document.querySelector("[name = 'leave_message']");
